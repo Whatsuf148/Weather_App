@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+
 import 'package:weather_app/additonal_info_update.dart';
 import 'package:weather_app/hourly_update.dart';
 import 'package:http/http.dart' as http;
