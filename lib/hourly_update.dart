@@ -4,8 +4,13 @@ class UpdateBox extends StatelessWidget {
   final String time;
   final IconData icon;
   final String value;
-  const UpdateBox(
-      {super.key, required this.time, required this.icon, required this.value});
+
+  const UpdateBox({
+    super.key,
+    required this.time,
+    required this.icon,
+    required this.value,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +28,13 @@ class UpdateBox extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  Text(
-                    time,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                  Center(
+                    child: Text(
+                      time,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   const SizedBox(

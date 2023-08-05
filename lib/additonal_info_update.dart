@@ -5,12 +5,15 @@ class AdditionalInfo extends StatelessWidget {
   final String label;
   final String value;
   const AdditionalInfo({
-    super.key, required this.data, required this.label, required this.value,
+    super.key,
+    required this.data,
+    required this.label,
+    required this.value,
   });
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
         Icon(
           data,
@@ -25,7 +28,7 @@ class AdditionalInfo extends StatelessWidget {
         ),
         Text(
           value,
-          style:const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
         )
       ],
     );
